@@ -12,14 +12,12 @@ RestFull API for simple DNS management
 	search for www.abc or www.abc.net return www.abc.net
 	search for www1.abc.net returns empty
 	
-* **create** - Add new domain or return and error if it either exists or in invalid format (PATH: $webroot/dns-api/domains/create.php)
-Put JSON into body request, example: 
+* **create** - Add new domain or return and error if it either exists or in invalid format (PATH: $webroot/dns-api/domains/create.php). Put JSON into body request, example: 
 {
     "fqdn" : "amazon.com"
 }
 
-* **create-record** - Add new dns record for give domain name. If it does not exists create record. if anything is invalid return error (PATH: $webroot/dns-api/records/create-record.php)
-Put JSON into body request, example: 
+* **create-record** - Add new dns record for give domain name. If it does not exists create record. if anything is invalid return error (PATH: $webroot/dns-api/records/create-record.php). Put JSON into body request, example: 
 {
     "fqdn" : "amazon.com",
     "type" : "A",
